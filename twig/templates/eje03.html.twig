@@ -1,0 +1,17 @@
+<html>
+
+<body>  
+    {% for pais, datos in paises %}
+    Nombre del pais {{pais}}
+    <br>
+       {for clave,valor in datos%} 
+        
+        {{clave}}: {{valor}}
+        <br>
+        {% endfor}
+        <br>
+    {% endfor %}
+
+</body>
+
+</html>

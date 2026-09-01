@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>{% block title %}Carrito de Compras{% endblock %}</title>
+
+        <link
+            rel="stylesheet"
+            href="{{ asset('css/estilos.css') }}"
+        >
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div>Carrito de Compras</div>
+
+            <div>
+                <button class="btn-ligth">Ver Orden</button>
+                <button class="btn-ligth">Salir</button>
+            </div>
+        </header>
+
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+
+    </body>
+</html>
