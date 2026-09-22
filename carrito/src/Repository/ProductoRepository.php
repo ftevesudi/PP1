@@ -1,11 +1,8 @@
 <?php
-
 namespace App\Repository;
-
 use App\Entity\Producto;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
-
 /**
  * @extends ServiceEntityRepository<Producto>
  */
@@ -15,7 +12,6 @@ class ProductoRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Producto::class);
     }
-
     //    /**
     //     * @return Producto[] Returns an array of Producto objects
     //     */
@@ -30,7 +26,6 @@ class ProductoRepository extends ServiceEntityRepository
     //            ->getResult()
     //        ;
     //    }
-
     //    public function findOneBySomeField($value): ?Producto
     //    {
     //        return $this->createQueryBuilder('p')
